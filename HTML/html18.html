@@ -1,0 +1,59 @@
+<!-- Div tag -->
+
+<!-- semantic tags
+    the tags in which we cannot predict what is inside
+    eg: div, article, figure, header, footer
+
+    not semantic are table, section, form
+
+    we use different tags because of different uses
+    eg if we use p, section, article the output would be the same
+    but the meaning and the useage would be different 
+    and we make a meaningful website thus semantic tags are used.
+
+    
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 18</title>
+    <!-- div is a block element-->
+
+    <!-- by make Div class -->
+    <style>
+        div{
+            background-color: aqua;
+            display: inline;
+        }
+        
+        .divclass{
+            color: white;
+            background-color: tomato;
+        }
+        #seconddiv{
+            background-color: mediumseagreen;
+        }
+
+        p{
+            color: white;
+            background-color: slateblue;
+        }
+        span{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div>This is first div</div><br><br>
+    <div>This is second div</div><br><br>
+    <div class="divclass">This is second div</div><br><br>
+    <div id="seconddiv">This is second div</div><br><br>
+    <p>This is second div</p><br><br>
+
+    <span>first span</span>
+    <span>second span</span>
+</body>
+</html>
