@@ -1,0 +1,32 @@
+.p{
+    position: static;
+}
+div{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    color: white;
+    background-color: blueviolet;
+    border: 1px solid black;
+}
+.wrapper{
+    height: 2000px;
+    width: 2000px;
+    background-color: yellow;
+}
+#box3{
+    position: relative;
+    left: 50px;
+    top: 100px;
+    
+}
+#box4{
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    
+}
+#box1{
+    position: fixed;
+}
+

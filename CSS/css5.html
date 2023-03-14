@@ -1,0 +1,94 @@
+<!-- Homework made css card same -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Codehelp</title>
+    <link rel="shortcut icon" type="image/png" href="codehelplogo.png">
+    <style>
+        html{
+            background-color: black;
+        }
+        .container{
+            height: 350px;
+            width: 380px;
+            border :1px solid black;
+            border-radius: 30px;
+            margin :40px;
+            padding:20px;
+            background-color: aliceblue;
+        }
+        .imagebox{
+            height: 210px;
+            width: 380px;
+            border :1px solid white;
+            border-radius: 8px;
+        }
+        .box3{
+            height: 20px;
+            width: 50px;
+            border :1px solid black;
+            border-radius: 6px;
+           
+            
+        }
+        img{
+            height: 100%;
+            width:100%;
+            border-radius: 5px;
+
+            object-fit: fill;
+        }
+        hr{
+            margin-right: 25%;
+        }
+        b{
+            white-space: normal;
+        }
+        .meta{
+            display: inline-block;
+            margin: 5px;
+        }
+        .description{
+            padding-inline-start: 10px;
+            display: flex;
+
+        }
+        #price{
+            color: rgb(38, 150, 255);
+            font-weight:bold;
+        }
+        #cut-price{
+            text-decoration: line-through;
+            color: gray;
+            font-weight: bold;
+        }
+        #offer{
+            background-color: rgb(29 209 161);
+            color: white;
+            border-radius: 8px;
+            width: 80px;
+            text-align: center;
+            padding: 3px;
+            font-weight: bold;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="imagebox"><img src="codehelp.jpeg"></img> </div>
+        <div><h1 style="font-family:sans-serif; font-size:25px">Web Development Master<br>Course @dot Batch</h1></div>
+        <hr>
+        <div class="description">
+            <p class="meta" id="price">₹4500</p>
+            <p class="meta" id="cut-price">₹6000</p>
+            <p class="meta" id="offer">42% off</p> 
+        </div>
+        
+    </div>
+</body>
+</html>

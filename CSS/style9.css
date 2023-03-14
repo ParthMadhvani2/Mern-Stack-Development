@@ -1,0 +1,23 @@
+.box{
+    background-color: blueviolet;
+    transform:translate(10px,20px);
+}
+.box1{
+    background-color: lightpink;
+    transform: rotate(-45deg);
+}
+.box2{
+    background-color: blueviolet;
+    margin: 300px;
+    transform: scale();
+}
+.box3{
+    background-color: blueviolet;
+    margin: 50px;
+    transform: skew(-45deg);
+}
+.box4{
+    background-color: blueviolet;
+    transform:translate(10px,20px);
+    transform: rotate(-45deg);
+}

@@ -1,0 +1,159 @@
+<!-- Selectors in CSS 
+    types of selectors
+1. simple selectors
+    1. element selector
+    selector{
+
+    }
+    2. id selector
+
+    #selector id name{
+
+    }
+    3. class selector
+
+    .selector{
+
+    }
+
+2. pseudo-class selector
+    selector:pseudoclass{
+
+    }
+
+3. multiple selector
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in css</title>
+    <style>
+        p{
+            color:blue;
+            font-size: larger;
+        }
+        .small{
+            font-size: small;
+            background-color: aqua;
+        }
+
+        .big{
+            font-size: large;
+        }
+        table ,tr ,td{
+            border : 10px solid black; 
+        }
+        .greenyellow{
+            border : 10px solid greenyellow;
+        }
+        .rebeccapurple{
+            border : 10px solid rebeccapurple;
+        }
+        .rebecapurple{
+            color : rebeccapurple;
+        }
+        #first-button{
+            color:black;
+        }
+        #intro-para{
+            color: black;
+            background-color: cadetblue;
+        }
+        button:hover{
+            
+           background-color:mediumslateblue;
+        }
+        a{
+            color:pink;
+        }
+        a:hover{
+            color:hotpink;
+        }
+    </style>
+</head>
+<body>
+    <p>This is my first paragraph</p>
+    <h1 class="small">This my first heading</h1>
+    <h2 class="small">This my first heading</h2>
+    <h3 class="small">This my first heading</h3>
+    <h4 class="big">This my first heading</h4>
+    <h5 class="big">This my first heading</h5>
+    <h6 class="big">This my first heading</h6>
+    <p id="intro-para">This is my first paragraph</p>
+
+    <button id="first-button">Submit</button><br><br>
+    <a href="google.com" target="_blank">Google</a><br><br>
+    <table>
+        <tr>
+            <td>abc</td>
+            <td>babc</td>
+            <td>cabc</td>
+        </tr>
+        <tr>
+            <td>aabc</td>
+            <td>babc</td>
+            <td>cabc</td>
+        </tr>
+        <tr>
+            <td>aabc</td>
+            <td>babc</td>
+            <td>cabc</td>
+        </tr>
+    </table><br><br>
+    <table class="greenyellow">
+        <tr>
+            <td>abc</td>
+            <td>babc</td>
+            <td>cabc</td>
+        </tr>
+        <tr>
+            <td>aabc</td>
+            <td>babc</td>
+            <td>cabc</td>
+        </tr><br>
+        <tr>
+            <td>aabc</td>
+            <td>babc</td>
+            <td>cabc</td>
+        </tr>
+    </table><br><br>
+    <table class="rebeccapurple">
+        <tr>
+            <td>abc</td>
+            <td>babc</td>
+            <td>cabc</td>
+        </tr>
+        <tr>
+            <td>aabc</td>
+            <td>babc</td>
+            <td>cabc</td>
+        </tr>
+        <tr>
+            <td>aabc</td>
+            <td>babc</td>
+            <td>cabc</td>
+        </tr>
+    </table><br><br>
+    <table class="rebecapurple">
+        <tr>
+            <td>abc</td>
+            <td>babc</td>
+            <td>cabc</td>
+        </tr>
+        <tr>
+            <td>aabc</td>
+            <td>babc</td>
+            <td>cabc</td>
+        </tr>
+        <tr>
+            <td>aabc</td>
+            <td>babc</td>
+            <td>cabc</td>
+        </tr>
+    </table><br><br>
+</body>
+</html>
