@@ -176,7 +176,7 @@ console.log('Chaliye shuru karte hai ');
 // }
 
 
-//object - colone #1
+//object - colone #1    iteration
 // let src = {
 //     a:10,
 //     b:20,
@@ -194,7 +194,7 @@ console.log('Chaliye shuru karte hai ');
 // src.a++;
 // console.log(destination);
 
-//Object Cloning #2
+//Object Cloning #2    assign
 // let src = {
 //     a:10,
 //     b:20,
@@ -211,7 +211,7 @@ console.log('Chaliye shuru karte hai ');
 
 // console.log(destination);
 
-//Object Cloning #3
+//Object Cloning #3      spread
 // let src = {
 //     a: 10,
 //     b:20,
@@ -224,4 +224,5 @@ console.log('Chaliye shuru karte hai ');
 
 // src.a++;
 
+// console.log(destination);
 // console.log(destination);
