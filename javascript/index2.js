@@ -119,7 +119,7 @@ console.log('Chaliye shuru karte hai ');
 // console.log(b.value);
 
 
-// lets print value of a 
+// lets print the value of a ( primitive value : pass by value)
 // let a = 10;
 
 // function inc(a) {
