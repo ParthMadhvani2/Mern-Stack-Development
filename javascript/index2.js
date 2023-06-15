@@ -118,6 +118,8 @@ console.log('Chaliye shuru karte hai ');
 // console.log(a.value);
 // console.log(b.value);
 
+
+// lets print value of a 
 // let a = 10;
 
 // function inc(a) {
