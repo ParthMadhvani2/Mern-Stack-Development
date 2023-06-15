@@ -130,6 +130,7 @@ console.log('Chaliye shuru karte hai ');
 
 // console.log(a);
 
+// lets print the value of a ( pass by reference)
 // let a = {value:10 };
 
 // function inc(a) {
