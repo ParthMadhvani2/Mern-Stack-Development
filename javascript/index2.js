@@ -141,10 +141,15 @@ console.log('Chaliye shuru karte hai ');
 
 // console.log(a.value);
 
+
+//new concept
+
 // let rectangle = {
 //     length:2,
 //     breadth:4
 // };
+
+
 
 //for-in loop 
 // for(let key in rectangle ) {
@@ -152,6 +157,9 @@ console.log('Chaliye shuru karte hai ');
 //     //values are reflected through rectangle[key]
 //     console.log(key,rectangle[key]);
 // }
+
+
+
 
 //for-of loop
 // for(let key of Object.entries(rectangle)) {
