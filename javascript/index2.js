@@ -183,16 +183,16 @@ console.log('Chaliye shuru karte hai ');
 //     c:30
 // };
 
-// let dest = {};
+// let destination = {};
 
 // for(let key in src) {
-//     dest[key] = src[key];
+//     destination[key] = src[key];
 // }
 
-// console.log(dest);
+// console.log(destination);
 
 // src.a++;
-// console.log(dest);
+// console.log(destination);
 
 //Object Cloning #2
 // let src = {
@@ -203,13 +203,13 @@ console.log('Chaliye shuru karte hai ');
 
 // let src2 = { value: 25};
 
-// let dest = Object.assign({}, src, src2);
+// let destination = Object.assign({}, src, src2);
 
-// console.log(dest);
+// console.log(destination);
 
 // src.a++;
 
-// console.log(dest);
+// console.log(destination);
 
 //Object Cloning #3
 // let src = {
@@ -218,10 +218,10 @@ console.log('Chaliye shuru karte hai ');
 //     c:30
 // };
 
-// let dest = {...src};
+// let destination = {...src};
 
-// console.log(dest);
+// console.log(destination);
 
 // src.a++;
 
-// console.log(dest);
+// console.log(destination);
