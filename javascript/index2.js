@@ -166,6 +166,8 @@ console.log('Chaliye shuru karte hai ');
 //     console.log(key);
 // }
 
+// if-else in js
+
 // if('length' in rectangle) {
 //     console.log('Present');
 // }
