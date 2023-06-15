@@ -96,6 +96,8 @@ console.log('Chaliye shuru karte hai ');
 // };
 
 
+// example: primitives
+
 // let a = 10;
 // let b = a;
 
