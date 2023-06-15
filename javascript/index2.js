@@ -51,6 +51,7 @@ console.log('Chaliye shuru karte hai ');
 // rectangleObject.color = 'yellow';
 // console.log(rectangleObject);
 
+// // object deletion using constrcutor
 // delete rectangleObject.color;
 // console.log(rectangleObject);
 
