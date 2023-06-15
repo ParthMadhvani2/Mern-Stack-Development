@@ -95,6 +95,10 @@ console.log('Chaliye shuru karte hai ');
 //     }
 // };
 
+// Notes:
+
+    // Primitives are copied by their values. and
+    //references are copied by their address/reference.
 
 // example: primitives
 
