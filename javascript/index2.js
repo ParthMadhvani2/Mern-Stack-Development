@@ -98,7 +98,7 @@ console.log('Chaliye shuru karte hai ');
 // Notes:
 
     // Primitives are copied by their values. and
-    //references are copied by their address/reference.
+    // references are copied by their address/reference.
 
 // example: primitives
 
@@ -129,6 +129,7 @@ console.log('Chaliye shuru karte hai ');
 // inc(a);
 
 // console.log(a);
+
 
 // lets print the value of a ( pass by reference)
 // let a = {value:10 };
@@ -224,5 +225,4 @@ console.log('Chaliye shuru karte hai ');
 
 // src.a++;
 
-// console.log(destination);
 // console.log(destination);
