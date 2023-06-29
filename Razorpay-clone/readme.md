@@ -1,19 +1,21 @@
-# Tailwind CSS Documentation
+#RazorPay Clone
 
-Tailwind CSS uses [Next.js](https://nextjs.org/) for its documentation.
+Building RAZORPAY clone using Tailwind CSS 
 
-To run the project locally, first install the dependencies:
+
+[Live Preview](https://razorpaytailwind.vercel.app/)
+
+
+
+**Step 1:** [Download](https://github.com/thepranaygupta/html-tailwind-css-starter-pack/archive/refs/heads/main.zip) this repo as a zip
+
+**Step 2:** To run:
 
 ```bash
 npm install
+npm run start
 ```
 
-Next, run the development server:
+**Step 3:** Goto [http://localhost:5173](http://localhost:5173)
 
-```bash
-npm run dev
-```
-
-## License
-
-This project is not licensed under an open-source license and is the intellectual property of Tailwind Labs Inc. The source is available only as an educational resource and to accept fixes for minor mistakes.
+Facing any issue: [Documentation](https://tailwindcss.com/docs/installation/using-postcss)
