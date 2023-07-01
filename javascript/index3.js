@@ -74,8 +74,13 @@ console.log(courses);
 // console.log(courses.includes({no:1, naam:'Parth'}));
 
 // but, by using call by fuction we can find
-let course = courses.find(function (course){
-    return course.naam === 'Parth';
-})
+// let course = courses.find(function (course){
+//     return course.naam === 'Parth';
+// });
+
+// console.log(course);
+
+//to make it more smaller we write with arrow functions instead
+let course = courses.find(course => course.naam === 'Parth');
 
 console.log(course);
