@@ -143,7 +143,74 @@ let firstName = new String ('Parth');
 
 
 // // iterate arrat ( travels in array )
-let arr = [10,20,30,40,50,];
-for(let value of arr){
-    console.log(value);
-}
+// let arr = [10,20,30,40,50,];
+// for(let value of arr){
+//     console.log(value);
+// }
+
+// arr.forEach(function(number){
+//     console.log(number);
+// });
+
+// arr.forEach(number => console.log(number));
+
+// // Joining the array while printing
+// let numbers = [10,20,30,40,50,];
+// const joined = numbers.join(',');
+
+// console.log(joined);
+
+
+
+// // Spliting the array while printing
+// let message = 'This is my first message';
+// let parts = message.split(' ');
+// console.log(parts);
+
+// let join = parts.join('_');
+// console.log(join);
+
+
+// // Sorting of arrays
+// let numbers = [40,30,20,10,50,60];
+// numbers.sort();
+// console.log(numbers);
+
+// numbers.reverse();
+// console.log(numbers);
+
+
+// // filter array
+// let numbers = [1,2,-1,-4];
+// let filtered = numbers.filter(function(value) {
+//     return value >= 0;
+// });
+
+// console.log(filtered);
+
+// filtered = numbers.filter(function(value) {
+//     return value <= 0;
+// });
+
+// console.log(filtered);
+
+
+
+// // Mapping Array
+// let numbers = [7,8,9,10];
+
+// let items = numbers.map(function(value) {
+//     return 'student_no' + value;
+// });
+
+// console.log(items);
+
+
+
+// let numbers = [1,2,-6,-9];
+
+// let items = numbers
+//             .filter(value => value >= 0)
+//             .map(num => {value: num});
+
+// console.log(items);
