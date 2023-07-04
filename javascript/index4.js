@@ -75,7 +75,7 @@
 // console.log(ans);   // prints 21
 
 
-
+// //Rest parameter
 // //argument would be array instead of object as above learned (rest operator)
 // function sum(...args){
 //     console.log(args);
@@ -137,18 +137,92 @@
 // //issue -> this function is read only
 
 // // so we use a get keyword here to access properties
-//  person = {
+// let person = {
 //     fName : 'Parth',
 //     lName : 'Madhvani',
-//     get fullName(){
-//         return `${person.fName}      ${person.lName}`   
+//     get fullName() {
+//         return `${person.fName} ${person.lName}`;
 //     },
-//     set fullName(value){
-//         let parts =values.split(' ');
+//     set fullName(value) {
+//         if(typeof value !== String) {
+//             throw new Error("You have not sent a string");
+//         }
+//         let parts = value.split(' ');
 //         this.fName = parts[0];
 //         this.lName = parts[1];
 //     }
 // };
 
-// person.fullName = 'Umesh kumar';
+// // try and catch errors show
+// try {
+//     person.fullName = true;
+// }
+// catch (e) {
+//     alert(e);
+// }
+
 // console.log(person.fullName);
+
+
+
+// // scopes
+// // life span of a here in let is to its nearest code blocks({....}) 
+// {
+//     let a = 5;
+//     console.log(a);
+// }
+// // let vs var
+// // life span of a here in var is only under function
+// {
+//     var a = 5;
+// }
+// console.log(a);
+
+// // but incase of function we can't access outside it
+// function walk(){
+//     var a = 5;
+// }
+// console.log(a);
+// // and if var is declared outside the function then it can be accessed from any where in the file
+// if(true){
+//     var a = 5;
+// }
+// console.log(a);
+
+
+// //In case of for loop
+// for(var i=1,i<10,i++){
+//                              // possible here we had used var
+// }
+// console.log(i);
+// for(let i=1,i<10,i++){
+//                              //Not possible here we had used let we can access inside the code blocks only { ...}
+// }
+// console.log(i);
+
+
+// // In case of const declare error will not be shown if inside the function
+// function a(){
+//     const ab = 10;
+//     console.log(ab);
+// }
+// function b(){
+//     const ab = 10;
+//     console.log(ab);
+// }
+// console.log(a());
+// console.log(b());
+
+
+
+// let arr=[1,2,3,4];
+// let total=0;
+
+// for(let value in arr)
+// total = total + value;
+
+// console.log(total); // wrong answer
+
+// let totalSum = arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// console.log("Printing total sum:");
+// console.log(totalSum);
