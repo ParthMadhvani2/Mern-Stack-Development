@@ -8,12 +8,107 @@
 <body>
     <h2>DOM -> Document Object Model</h2>
 
-    // // getElementById('') :
+// // // HOW TO FIND AN ELEMENT IN A HTML DOCUMENT WAYS ARE ->>
+    
+    // // document.getElementById('') :-
     // //it is called on document object
     // // it returns a single object as ID is always unique
+    // // to find all the object that has ''id name
 
-    // // getElementByClassName('') :
+    // // document.getElementByClassName('') :-
     // // for multiple objects
     // // it returns an HTMLCollection(array-like object) as child elementswhich have all the given class name
+    // // to find all the object that has ''class name
+    
+    // // Access element
+    // // document.getElementByTagName('')
+    
+    // //document.querySelector('.classname') :- to print a class of that name
+    
+    // //document.querySelectorAll('.hidden') :- to print all the class of that name
+
+    // //when we select a item on the screen and then $0 then it would store in a variable and print it.
+    // //$0 :- is used to print the span tag
+    // //$0.className :- to know what class are their in that particular object
+
+
+
+
+// // this properties is used to display the content written in the class used ->>
+
+   // //first use querySelector to know what to be displayed
+
+    // // let a = document.querySelector('');
+    // //a.innerHTML; :-
+    // //it displays tags by rendering it then display it
+    // //It doesn't show the hidden content which is written inside the hidden class
+
+
+    // //a.textContent; :-
+    // //it displays the tags as it is
+    // //It also shows all the hidden content which is written inside the hidden class
+
+
+
+
+
+
+
+// // Adding new element/content ->>
+  // //first use querySelector to know where to add the content
+// //this is slow way and long way
+    // let olda = document.querySelector('.classname');
+    // olda; //print a variable in which it is stored currently
+    
+    // let newa = document.createElement('p');  //to add new tag in the element [in ('write which tag to be added')]
+    
+    // let texta = document.createText('I am the new paragraph');  //to add text in new element [in ('text to be added')]
+    // olda.appendChild(texta);  //to update the current element
+    
+    // newa; //print a variable in which it is stored newly
+
+    //now to add the newa with the current one written
+    // olda.appendChild(newa);  //to update the current element
+    
+    // olda;  // It would print with updated value in it /changes we have made
+    // NOTE : always the updated code will be added at the last of the updating tag
+
+
+
+// //this is fast way
+    //let newa = document.createElement('p');
+    // newa.textContent = 'I am updated paragraph';
+    // olda.appendChild(newa);
+
+
+// // Insert adjcent html content location ->>
+    //where and what
+    // 1. beforebegin
+    // 1. afterbegin
+    // 1. beforeend
+    // 1. afterend
+
+// // Remove an element
+    // parent.removeChild('');
+
+
+// // CSS cange using javasrcript ->>
+
+// style :-
+    //let content = $0;  what to edit is copied to a variable
+    //content;  //print that element
+    // this is how to edit :
+    //content.style.color = 'red';
+    //content.style.backgroundcolor = 'white';
+    
+// cssText :-
+    //content.style.cssText = 'color:white ; backgroundcolor:green ; font-size:4em;';
+    
+    
+// className :-
+// classList :-
+    //content.classList;
+//  setAttribute:-
+    //content.style.setAttribute = ("style", "color:white;  backgroundcolor:green;  font-size:4em;");
 </body>
 </html>
