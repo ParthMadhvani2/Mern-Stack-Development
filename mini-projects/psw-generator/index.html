@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Password Generator</title>
 </head>
 <body>
     <div class="container">
@@ -12,7 +12,7 @@
         <div class="display-container">
             <input readonly placeholder="Password" class="display" data-passwordDisplay> <!-- custom attribute eg here:- "data-passwordDisplay" -->
 
-            <button>
+            <button data-copyBtn>
                 <span data-copyMsg></span>
                 <img src="./assets/copy.svg" alt="copy-image" width="23" height="23">
             </button>
@@ -22,7 +22,7 @@
         <!-- password length center -->
         <div class="length-container">
             <p>Password Length</p>
-            <p data-length>0</p>
+            <p data-lengthNumber>0</p>
         </div>
         <!-- slider -->
         <input type="range" min="1" max="20" class="slider" step="1" data-length-slider>
@@ -52,9 +52,11 @@
         </div>
 
         <!-- generate password -->
-        <button class="generate-btn">Generate Password</button>
+        <button class="generatebtn">Generate Password</button>
     </div>
         
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
