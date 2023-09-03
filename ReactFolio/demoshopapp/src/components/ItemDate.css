@@ -1,0 +1,9 @@
+.mfg-date{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.mfg-date span{
+    padding: 1%;
+}
