@@ -1,52 +1,46 @@
 import './App.css';
-import Item from './components/Items';
-import ItemDate from './components/ItemDate'; 
-import Cards from './components/Cards'; 
+import Item from './components/Item';
+import ItemDate from './components/ItemDate';
+import Card from './components/Card';
 
 function App() {
-  const ItemTwoName = "SurfExcel";
-  // arrary or JSON
   const response = [
     {
       itemName:"Nirma",
-      itemDate:"20",
-      itemMonth:"Jan",
-      itemYear:"2000",
+      itemDate: "20",
+      itemMonth: "June",
+      itemyear:"1998"
     },
     {
-      itemName:"SurfExcel",
-      itemDate:"22",
-      itemMonth:"Feb",
-      itemYear:"2002",
+      itemName:"Nirma2",
+      itemDate: "202",
+      itemMonth: "June2",
+      itemyear:"19982"
     },
     {
-      itemName:"Wheel",
-      itemDate:"24",
-      itemMonth:"March",
-      itemYear:"2004", 
+      itemName:"Nirma3",
+      itemDate: "203",
+      itemMonth: "June3",
+      itemyear:"19983"
     }
   ];
-
   return (
     <div>
-      <Cards>
-      {/* how to pass props */}
-    <Item name={response[0].itemName}>
-      Hello I am the first item
-    </Item>
-    <ItemDate day={response[0].itemDate} month={response[0].itemMonth} year={response[0].itemYear}></ItemDate>
-    
-    <Item name={ItemTwoName}></Item>
-    <ItemDate day={response[1].itemDate} month={response[1].itemMonth} year={response[1].itemYear}></ItemDate>
-    
-    <Item name={response[2].itemName}></Item>
-    <ItemDate day={response[2].itemDate} month={response[2].itemMonth} year={response[2].itemYear}></ItemDate>
-    
+    <Card>
+      <Item name={response[0].itemName} >
+          Hello Jee Main hu aapki first Item
+        </Item>
+        <ItemDate day={response[0].itemDate} month={response[0].itemMonth} year={response[0].itemyear}></ItemDate>
 
-    <div className="App">
-        hello jee
-    </div>
-    </Cards>
+        <Item name={response[1].itemName} ></Item>
+        <ItemDate day={response[1].itemDate} month={response[1].itemMonth} year={response[1].itemyear}></ItemDate>
+
+        <Item name={response[2].itemName}></Item>
+        <ItemDate day={response[2].itemDate} month={response[2].itemMonth} year={response[2].itemyear}></ItemDate>
+        <div className="App">Hello Jee </div>
+    </Card>
+
+
     </div>
   );
 }
