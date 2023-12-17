@@ -1,10 +1,14 @@
 import React from "react";
+import data from "./data";
+import Tours from "../components/Tours";
 
 const App = () => {
+
+  const [tours,setTours] = useState(data)
+
   return (
     <div>
-      <h2>Play with Parth</h2>
-      <Tours>
+      <Tours tours={tours}>
 
       </Tours>
     </div>
