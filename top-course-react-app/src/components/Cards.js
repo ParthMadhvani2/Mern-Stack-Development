@@ -16,11 +16,15 @@ export const Cards = ({courses}) => {
 
   return (
     <div>
-        {
-        getCourses().map((cources) => {
-            <Card/>
-        })
-    }
+        {!courses ? (
+            <div>
+                <p>NO Data Found</p>
+            </div>
+        ) : (
+            getCourses().map((course) => {
+                return <Card key ={course.id} course={course}/>
+              })
+        ) }
     </div>
   )
 }
