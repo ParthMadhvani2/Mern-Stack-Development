@@ -4,35 +4,44 @@ import Navbar from "./components/Navbar";
 import Filter from "./components/Filter";
 import Cards from "./components/Cards";
 import { toast } from "react-toastify";
-// import { useEffect } from "react";
 
 
 const App = () => {
-    
-  const [courses, setCourses] = useState(null);
 
-    useEffect(() => {
-      const fetchData = async() => {
-        try{
-          const res = await fetch(apiUrl);
-          const output = await res.json();
-          //save data into a variable
-          setCourses(output.data);
-        }
-        catch(error){
-          toast.error("Something went wrong");
-        }
-      }
-      fetchData();
-    },[]);
+  const [courses , setCourses] = useState(null);
+  const [loading , setloading] = useState(true);
+    
+  async function fetchData(){
+    setloading(true);
+    try{
+      let responce = await fetch(apiUrl);
+      let output = await responce.json();
+      /// output -> 
+      setCourses(output);
+    }
+    catch(error){
+      toast.error("Check your Network");
+    }
+    setloading(false);
+  }
+
+  useEffect(() => {
+    fetchData();
+  },[])
 
   return (
     <div>
+      <div>
       <Navbar/>
+      </div>
+      <div>
       <Filter
       filterData={filterData}
       />
+      </div>
+      <div>
       <Cards courses={courses}/>
+      </div>
     </div>
   );
 };
