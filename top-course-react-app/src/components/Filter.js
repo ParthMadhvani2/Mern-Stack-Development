@@ -5,7 +5,7 @@ const Filter = (props) => {
     return (
         <div>
             {filterData.map((data) => {
-                <button>
+                <button key={data.id}>
                     {data.title}
                 </button>
             })}
