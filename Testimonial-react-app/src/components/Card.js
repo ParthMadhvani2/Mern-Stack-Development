@@ -11,11 +11,11 @@ const Card = (props) => {
         </div>
 
         <div className='text-center mt-7'>
-            <p className='font-bold text-2xl capitalize'>{review.name}</p>
+            <p className='tracking-wider font-bold text-2xl capitalize'>{review.name}</p>
+            <p className='text-violet-300 uppercase text-sm'>{review.job}</p>
         </div>
 
         <div className='text-center mt-7'>
-            <p className='text-violet-300 uppercase text-sm'>{review.job}</p>
         </div>
         <div className='text-violet-400 mx-auto mt-5'>
             <FaQuoteLeft/>
