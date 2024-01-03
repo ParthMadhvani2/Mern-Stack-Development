@@ -1,12 +1,12 @@
 import './App.css';
 import { NavLink, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
-import Support from './components/Support';
-import About from './components/About';
-import Labs from './components/Labs';
-import NotFound from './components/NotFound';
+import Home from './components/home';
+import Support from './components/support';
+import About from './components/about';
+import Labs from './components/labs';
+import NotFound from './components/notfound';
 import { Link } from 'react-router-dom';
-import MainHeader from './components/MainHeader';
+import MainHeader from './components/mainheader';
 
 function App() {
   return (
