@@ -1,7 +1,11 @@
 import React from 'react'
 
-export const notfound = () => {
+const NotFound = () => {
   return (
-    <div>notfound</div>
+    <div>
+      This is NOT FOund Page
+    </div>
   )
 }
+
+export default NotFound

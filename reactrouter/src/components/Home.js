@@ -1,7 +1,14 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
-export const home = () => {
+const Home = () => {
   return (
-    <div>home</div>
+    <div>
+    
+        This is my HomePage
+      
+    </div>
   )
 }
+
+export default Home
