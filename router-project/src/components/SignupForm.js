@@ -16,6 +16,7 @@ const SignupForm = ({setIsLoggedIn}) => {
     })
 
     const [showPassword, setShowPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     const [accountType, setAccountType] = useState("student");
 
     function changeHandler(event) {
@@ -41,8 +42,13 @@ const SignupForm = ({setIsLoggedIn}) => {
         const accountData = {
             ...formData
         };
-        console.log("printing account data ");
-        console.log(accountData);
+
+        const finalData ={
+            ...accountData,
+            accountType
+        }
+        console.log("printing final account data ");
+        console.log(finalData);
 
         navigate("/dashboard");
 
@@ -141,7 +147,7 @@ const SignupForm = ({setIsLoggedIn}) => {
                     <p className='w-full text-[0.87rem] text-richblack-5 mb-1 leading-[1.375rem]'>Confirm Password<sup className='text-pink-200'>*</sup></p>
                     <input
                         required
-                        type= {showPassword ? ("text") : ("password")}
+                        type= {showConfirmPassword ? ("text") : ("password")}
                         name="confirmPassword"
                         onChange={changeHandler}
                         placeholder="Confirm Password"
@@ -149,8 +155,8 @@ const SignupForm = ({setIsLoggedIn}) => {
                         className='bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]'
                     />
                     <span className='absolute right-3 top-[38px] cursor-pointer'
-                     onClick={() => setShowPassword((prev) => !prev)}>
-                        {showPassword ? (<AiOutlineEyeInvisible fontSize={24} fill='#AFB2BF'/>) : (<AiOutlineEye fontSize={24} fill='#AFB2BF'/>)}
+                     onClick={() => setShowConfirmPassword((prev) => !prev)}>
+                        {showConfirmPassword ? (<AiOutlineEyeInvisible fontSize={24} fill='#AFB2BF'/>) : (<AiOutlineEye fontSize={24} fill='#AFB2BF'/>)}
                     </span>
                 </label>
             </div>
