@@ -1,7 +1,8 @@
 import React from 'react'
-import logo from "../assets/Logo.svg";
-import { Link } from 'react-router-dom'
-import {toast} from "react-hot-toast";
+import logo from "../assets/Logo.svg"
+import {Link} from "react-router-dom"
+import {toast} from "react-hot-toast"
+
 
 const Navbar = (props) => {
     let isLoggedIn = props.isLoggedIn;
@@ -9,59 +10,60 @@ const Navbar = (props) => {
 
   return (
     <div className='flex justify-evenly'>
-        <Link to="/">
-            <img src={logo} alt='Logo' width={160} height={32} loading='lazy'/>
+
+        <Link to="/"> 
+            <img src={logo} alt="Logo" width={160} height={32} loading="lazy"/>
         </Link>
 
-        <nav className='flex gap-3'>
-            <ul>
+        <nav>
+            <ul className='flex gap-3'>
                 <li>
-                    <link to="/">Home</link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <link to="/">About</link>
+                    <Link to="/">About</Link>
                 </li>
                 <li>
-                    <link to="/">Contact</link>
+                    <Link to="/">Contact</Link>
                 </li>
             </ul>
         </nav>
 
         {/* Login - SignUp - LogOut - Dashboard */}
         <div className='flex ml-5 mr-3 gap-3'>
-            {isLoggedIn &&
-                <link to="/login">
+            { !isLoggedIn &&
+                <Link to="/login">
                     <button>
                         Login
                     </button>
-                </link>
+                </Link>
             }
-            {!isLoggedIn &&
-                <link to="/signup">
-                    <button>
-                        SignUp
+            { !isLoggedIn &&
+                <Link to="/signup">
+                    <button >
+                        Sign Up
                     </button>
-                </link>
+                </Link>
             }
             { isLoggedIn &&
-                <link to="/logout">
+                <Link to="/">
                     <button onClick={() => {
                         setIsLoggedIn(false);
-                        toast.success("Logged out");
+                        toast.success("Logged Out");
                     }}>
-                        LogOut
+                        Log Out
                     </button>
-                </link>
+                </Link>
             }
-            {isLoggedIn &&
-                <link to="/dashboard">
+            { isLoggedIn &&
+                <Link to="/dashboard">
                     <button>
                         Dashboard
                     </button>
-                </link>
+                </Link>
             }
         </div>
-        
+      
     </div>
   )
 }
