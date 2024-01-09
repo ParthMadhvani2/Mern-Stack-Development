@@ -5,6 +5,11 @@ import Header from "./components/Header";
 import Blogs from "./components/Blogs";
 import Pagination from "./components/Pagination";
 import { Route ,Routes, useSearchParams} from "react-router-dom";
+import {useLocation} from "react-router-dom"
+import Home from "./Pages/Home";
+import TagPage from "./Pages/TagPage";
+import BlogPage from "./BlogPage";
+import CategoryPage from "./CategoryPage";
 
 export default function App() {
   const { fetchBlogPosts } = useContext(AppContext);
@@ -22,7 +27,7 @@ export default function App() {
     }
     else if(location.pathname.includes("categories")){
       const category = location.pathname.split("/").at(-1).replaceAll("-"," ");
-      fetchBlogPosts(Nmber(page),null,category);
+      fetchBlogPosts(Number(page),null,category);
     }
     else{
       fetchBlogPosts(Number(page));
