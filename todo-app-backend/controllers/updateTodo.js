@@ -5,6 +5,7 @@ const Todo = require("../models/Todo");
 
 exports.updateTodo = async(req,res) => {
     try {
+        // second way to get id 1st is in getTodo.js file
         const {id} = req.params;
         const {title, description} = req.body;
 
