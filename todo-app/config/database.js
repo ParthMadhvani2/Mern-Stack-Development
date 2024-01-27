@@ -1,18 +1,19 @@
 const mongoose = require("mongoose");
 
-require("dotend").config();
+require("dotenv").config();
 
 const dbConnect = () => {
     mongoose.connect(process.env.DATABASE_URL, {
         useNewUrlParser:true,
-        useUnifiedTopology:true,
+        useUnifiedTopology: true,
     })
-    .then(() => console.log("DB connection is successful"))
-    .catch((error) => {
-        console.log("Error has occur in connection DB");
+    .then(() => console.log("DB ka Connection is Successful"))
+    .catch( (error) => {
+        console.log("Issue in DB Connection");
         console.error(error.message);
+        //iska matlab kya h ?
         process.exit(1);
-    });
+    } );
 }
 
 module.exports = dbConnect;
